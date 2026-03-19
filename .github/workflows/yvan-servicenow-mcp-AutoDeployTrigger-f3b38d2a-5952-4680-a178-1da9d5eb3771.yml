@@ -35,7 +35,7 @@ jobs:
           # This tells the action to use your Azure Login session
           acrName: yvanservicenowreg
           # Fix 2: Clean image name format
-          imageToBuild: yvanservicenowmcp:${{ github.sha }}
+          imageToBuild: yvanservicenowreg.azurecr.io/yvan-servicenow-mcp:${{ github.sha }}
           # Fix 3: Solve the Port 80 vs 8080 mismatch
           targetPort: 8080
           dockerfilePath: Dockerfile
